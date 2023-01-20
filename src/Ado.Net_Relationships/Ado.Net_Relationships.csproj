@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F37D7D80-2ED7-4969-881A-FE9250785D1F}</ProjectGuid>
+    <ProjectGuid>{3617139C-F654-408F-ABF9-BCAD9F9D7320}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Ado.Net_Relationships</RootNamespace>
     <AssemblyName>Ado.Net_Relationships</AssemblyName>
