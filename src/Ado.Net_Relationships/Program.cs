@@ -12,7 +12,7 @@ namespace Ado.Net_Relationships
         static void Main(string[] args)
         {
             CrudOperation operation = new CrudOperation();
-            operation.GetData();
+            operation.InsertData();
         }
     }
     public class CrudOperation
