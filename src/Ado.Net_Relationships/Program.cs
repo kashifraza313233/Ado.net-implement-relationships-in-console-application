@@ -9,37 +9,44 @@ namespace Ado.Net_Relationships
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
-            Console.WriteLine("\t\t\t\t\t\t\t\tTeacher College Profile");
-            Console.WriteLine("\n\n");
-            Console.WriteLine(" Enter 1 to Insert Data:\t");
-            Console.WriteLine(" Enter 2 to Get Data:\t");
-            Console.WriteLine(" Enter 3 to Delete Data:\t");
-            Console.WriteLine(" Enter 4 to Update Data:\t");
-            Console.WriteLine(" Enter 0 to Exist:\t");
+            Console.WriteLine("\t\t\t\t\t\t\t\t|Teacher College Profile|");
+            Console.WriteLine("\t\t\t\t\t\t\t\t|-----------------------|");
+            Console.WriteLine("\t\t\t\t\t\t\t\t|Enter 1 to Insert Teacher Data|");
+            Console.WriteLine("\t\t\t\t\t\t\t\t|Enter 2 to Get Data\t\t|");
+            Console.WriteLine("\t\t\t\t\t\t\t\t|Enter 3 to Delete Data|");
+            //Console.WriteLine(" Enter 4 to Update Data:\t");
+            Console.WriteLine("\t\t\t\t\t\t\t\t|Enter 0 to Exist|");
            
             CrudOperation operation = new CrudOperation();
             int n;
             Console.WriteLine("Enter Number:");
             n = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("\n\n");
-            switch (n) 
+            Console.WriteLine("\n");
+            while (n != 0)
             {
-                case 1:
-                    operation.InsertData();
-                    break;
-                case 2:
-                    operation.GetData();
-                    break;
-                   
+                switch (n)
+                {
+                    case 1:
+                        operation.InsertTeacherData();
+                        break;
+                    case 2:
+                        operation.GetTeacherData();
+                        break;
+                }
+                Console.WriteLine("\n");
+                Console.WriteLine("Enter Number:");
+                n = Convert.ToInt32(Console.ReadLine());
             }
+         
         }
     }
     public class CrudOperation
     {
         string ConnectionString = @"Data Source=DESKTOP-EOP4ESH\SQLEXPRESS01;Initial Catalog=TeacherCollegeProfile;Integrated Security=True";
-        public void GetData()
+        public void GetTeacherData()
         {
            try
             {
@@ -59,7 +66,7 @@ namespace Ado.Net_Relationships
                 Console.WriteLine(e.Message);   
             }
         }
-        public void InsertData()
+        public void InsertTeacherData()
         {
             try
             {
@@ -93,6 +100,7 @@ namespace Ado.Net_Relationships
             }
             
         }
+      
 
     }
 
