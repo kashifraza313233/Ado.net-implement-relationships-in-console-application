@@ -1,2 +1,2 @@
-# Ado.net-implement-relationships-in-console-application
-Ado.net implements relationships in console application
+# Ado.net-Crud Operations-console-application
+Ado.net implements Crud Operations on console application
